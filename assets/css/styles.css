@@ -296,6 +296,11 @@ button{font:inherit}
 .project-link:hover{color:var(--accent);transform:translate(2px,-2px)}
 .project-kicker{margin:0}
 
+.case-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:19px}
+.case-links a{font:10px "DM Mono",monospace;color:#a6a69f;border-bottom:1px solid #343430;padding-bottom:4px;transition:color .2s ease,border-color .2s ease}
+.case-links a:first-child{color:var(--accent)}
+.case-links a:hover{color:var(--accent);border-color:var(--accent)}
+
 .research-grid{
   max-width:var(--max);margin:0 auto;
   display:grid;grid-template-columns:1fr 1fr;
