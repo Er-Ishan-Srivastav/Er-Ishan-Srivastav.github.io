@@ -73,3 +73,4 @@ const updateProgress = () => {
 
 window.addEventListener("scroll", updateProgress, { passive: true });
 updateProgress();
+
