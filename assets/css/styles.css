@@ -331,3 +331,23 @@ main{padding-top:76px}
   *,*:before,*:after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+/* Resume / print surface */
+.resume-top{max-width:960px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}
+.resume-top a,.resume-top button{background:none;border:0;color:var(--accent);font:10px var(--mono);letter-spacing:.06em;cursor:pointer}
+.resume-wrap{max-width:960px;margin:0 auto;padding:50px 24px 80px}
+.resume-header{display:grid;grid-template-columns:1fr 300px;gap:40px;border-bottom:1px solid var(--line);padding-bottom:26px}
+.resume-header h1{font-size:54px;margin:0;letter-spacing:-.055em}
+.resume-header p{color:#8d9693}
+.resume-contact{display:flex;flex-direction:column;gap:5px;align-items:flex-end;color:#7f8885;font:9px var(--mono);text-align:right}
+.resume-section{padding-top:28px}
+.resume-section h2{margin:0 0 14px;font:10px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.resume-section>p,.resume-section li{color:#9aa19f;font-size:12px;line-height:1.7}
+.resume-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.resume-grid>div{border:1px solid var(--line);padding:15px}
+.resume-grid strong{font-size:11px}.resume-grid p{color:#858d8a;font-size:11px;line-height:1.6}
+.resume-item{border-top:1px solid var(--line);padding:17px 0}
+.resume-item>div{display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+.resume-item h3{margin:0;font-size:18px}.resume-item span{font:9px var(--mono);color:#666f6c;white-space:nowrap}
+.resume-item ul{margin:10px 0 0;padding-left:18px}.resume-item.compact{padding:12px 0}.plain-list{margin:0;padding-left:18px}
+.no-print{display:none}
+@media print{html,body{background:#fff!important;color:#111!important}.resume-top,.footer.no-print{display:none!important}.resume-wrap{padding:0;color:#111}.resume-header{grid-template-columns:1fr 260px;border-color:#ccc}.resume-header h1,.resume-item h3{color:#111}.resume-header p,.resume-contact,.resume-section>p,.resume-section li,.resume-grid p,.resume-item span{color:#444}.resume-section h2{color:#111}.resume-grid>div,.resume-item{border-color:#ccc}.resume-section{break-inside:avoid}.resume-item{break-inside:avoid}}
