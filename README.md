@@ -1,24 +1,62 @@
 # Ishan Srivastav — Personal Portfolio
 
-Personal portfolio for **Ishan Srivastav**, deployed with GitHub Pages at:
+**Live site:** https://er-ishan-srivastav.github.io/
 
-**https://er-ishan-srivastav.github.io/**
+A hand-built, responsive portfolio focused on data engineering, analytics, backend systems, applied AI, and selected project case studies.
 
-## Structure
+## Highlights
+
+- Responsive dark visual system with accessible navigation, scroll progress, and progressive reveal effects.
+- Dedicated **SmartVolt** feature with the live app, API documentation, source code, architecture summary, and release verification notes.
+- Case studies for CAMAF, BrillX, PayFlow UPI, Enkryptor, and AI Vision Assistant.
+- C-DAC Big Data Analytics Learning Hub linking 10 public study modules.
+- Experience, technical stack, research, and contact sections.
+- Open Graph metadata for improved link previews; no frontend framework or build step required.
+
+## Tech
+
+- HTML5, CSS, and vanilla JavaScript.
+- Inter and DM Mono via Google Fonts.
+- Static hosting on GitHub Pages.
+
+## Repository layout
 
 ```text
 .
 ├── index.html
-└── assets/
-    ├── css/
-    │   └── styles.css
-    └── js/
-        └── main.js
+├── assets/
+│   ├── css/
+│   │   ├── styles.css
+│   │   ├── cdac.css
+│   │   └── project.css
+│   ├── img/
+│   └── js/main.js
+└── projects/
+    ├── camaf.html
+    ├── brillx.html
+    ├── payflow.html
+    ├── enkryptor.html
+    └── vision-assistant.html
 ```
 
-## Scope
+## Local preview
 
-This repository is intentionally separate from the [Ishan Learning Hub](https://er-ishan-srivastav.github.io/Ishan-Learning-Hub/).
+Run a static file server from the repository root:
 
-The portfolio will be expanded incrementally with dedicated sections for experience, projects, research, education, certifications, resume, and contact.
+```bash
+python -m http.server 8080
+```
 
+Open http://localhost:8080.
+
+## Featured live build
+
+- [SmartVolt application](https://smartvolt-demo.duckdns.org/overview)
+- [FastAPI docs](https://smartvolt-demo.duckdns.org/docs)
+- [SmartVolt source repository](https://github.com/Er-Ishan-Srivastav/SmartVolt)
+
+SmartVolt simulates meter readings and recharges; it does not connect to physical meters or process real payments.
+
+## Related project
+
+The [Ishan Learning Hub](https://er-ishan-srivastav.github.io/Ishan-Learning-Hub/) is a separate public study and revision site.
