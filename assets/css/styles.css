@@ -351,3 +351,29 @@ main{padding-top:76px}
 .resume-item ul{margin:10px 0 0;padding-left:18px}.resume-item.compact{padding:12px 0}.plain-list{margin:0;padding-left:18px}
 .no-print{display:none}
 @media print{html,body{background:#fff!important;color:#111!important}.resume-top,.footer.no-print{display:none!important}.resume-wrap{padding:0;color:#111}.resume-header{grid-template-columns:1fr 260px;border-color:#ccc}.resume-header h1,.resume-item h3{color:#111}.resume-header p,.resume-contact,.resume-section>p,.resume-section li,.resume-grid p,.resume-item span{color:#444}.resume-section h2{color:#111}.resume-grid>div,.resume-item{border-color:#ccc}.resume-section{break-inside:avoid}.resume-item{break-inside:avoid}}
+
+
+/* SmartVolt — featured live system */
+.smartvolt-section{background:radial-gradient(circle at 86% 14%,rgba(212,255,79,.085),transparent 28rem),linear-gradient(180deg,rgba(255,255,255,.015),transparent 65%)}
+.smartvolt-layout{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.82fr);gap:64px;align-items:center}
+.smartvolt-copy h2{margin:20px 0 16px;font-size:clamp(54px,7vw,86px);line-height:.94;letter-spacing:-.07em}
+.smartvolt-period{color:var(--accent)}
+.smartvolt-copy .project-kicker{margin-top:24px}
+.smartvolt-lede{max-width:650px;color:#adb5b2;font-size:16px;line-height:1.8}
+.smartvolt-copy .tags{margin-top:22px}
+.smartvolt-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.smartvolt-panel{overflow:hidden;border:1px solid rgba(212,255,79,.2);border-radius:18px;background:linear-gradient(145deg,rgba(20,24,16,.96),rgba(12,14,12,.97));box-shadow:0 25px 80px rgba(0,0,0,.22)}
+.smartvolt-panel-head,.smartvolt-panel-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 20px;border-bottom:1px solid var(--line);color:#858b7b;font:9px var(--mono);letter-spacing:.11em}
+.smartvolt-panel-head span:last-child,.smartvolt-flow-node>span{color:var(--accent)}
+.smartvolt-flow{padding:20px}
+.smartvolt-flow-node{display:flex;align-items:center;gap:14px;padding:15px 16px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.018)}
+.smartvolt-flow-node>span{font:10px var(--mono)}
+.smartvolt-flow-node strong{display:block;font-size:12px;color:#e5e8df}
+.smartvolt-flow-node small{display:block;margin-top:5px;color:#898d81;font-size:10px;line-height:1.5}
+.smartvolt-flow-accent{border-color:rgba(212,255,79,.25);background:rgba(212,255,79,.045)}
+.smartvolt-flow-connector{text-align:center;padding:7px 0;color:var(--accent);font:13px var(--mono)}
+.smartvolt-panel-foot{border-top:1px solid var(--line);border-bottom:0}
+.smartvolt-panel-foot strong{color:var(--accent);font-size:10px}
+.smartvolt-note{max-width:var(--max);margin:26px auto 0;color:#778079;font-size:10px;line-height:1.7}
+@media(max-width:900px){.smartvolt-layout{grid-template-columns:1fr;gap:38px}}
+@media(max-width:560px){.smartvolt-actions{align-items:stretch;flex-direction:column}.smartvolt-actions .button{width:100%}.smartvolt-panel-head,.smartvolt-panel-foot{align-items:flex-start;flex-direction:column;gap:8px}}
