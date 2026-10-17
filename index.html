@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ishan Srivastav — Data Engineering-focused technologist working across big data, ETL, backend systems, automation, and applied AI.">
+  <meta name="description" content="Ishan Srivastav — Data Engineer building reliable ETL pipelines, backend systems, analytics tools, and deployed cloud applications including SmartVolt.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ishan Srivastav — Data Engineering & Cloud Systems">
+  <meta property="og:description" content="Data engineering, analytics, backend systems, and deployed projects. Explore SmartVolt and selected technical case studies.">
+  <meta property="og:url" content="https://er-ishan-srivastav.github.io/">
+  <meta property="og:image" content="https://er-ishan-srivastav.github.io/assets/img/ishan-srivastav.webp">
   <meta name="theme-color" content="#08090a">
   <title>Ishan Srivastav / Data Engineer</title>
 
@@ -37,6 +42,7 @@
           <a href="#cdac">CDAC Lab</a>
           <a href="#stack">Stack</a>
           <a href="#projects">Projects</a>
+          <a href="#smartvolt">SmartVolt</a>
           <a href="#research">Research</a>
           <a href="#contact">Contact</a>
           <a href="resume.html">Resume ↗</a>
@@ -74,6 +80,7 @@
             <div class="hero-actions">
               <a class="button button-solid" href="#projects">Explore systems <span>↘</span></a>
               <a class="button button-ghost" href="https://github.com/Er-Ishan-Srivastav" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a class="button button-ghost" href="https://smartvolt-demo.duckdns.org/overview" target="_blank" rel="noreferrer">SmartVolt live ↗</a>
             </div>
 
             <div class="hero-proof">
@@ -116,6 +123,8 @@
                 <p class="terminal-output">data engineer / backend / applied ai</p>
                 <p><b>$</b> current_focus</p>
                 <p class="terminal-output">spark · mongodb · sql · docker · local ai</p>
+                <p><b>$</b> latest_build</p>
+                <p class="terminal-output accent">smartvolt / aws / https</p>
                 <p><b>$</b> principle</p>
                 <p class="terminal-output accent">make the data path obvious.</p>
                 <span class="terminal-cursor" aria-hidden="true"></span>
@@ -393,9 +402,27 @@
         </div>
       </section>
 
+      <section id="smartvolt" class="section section-pad smartvolt-section">
+        <div class="section-head reveal"><span class="section-label">05 / LIVE BUILD</span><a class="section-code section-link" href="https://github.com/Er-Ishan-Srivastav/SmartVolt" target="_blank" rel="noreferrer">SmartVolt source ↗</a></div>
+        <div class="smartvolt-layout">
+          <div class="smartvolt-copy reveal"><span class="live-chip"><i></i> DEPLOYED / HTTPS</span><p class="project-kicker">FULL-STACK · ENERGY SIMULATION · CLOUD DEPLOYMENT</p><h2>SmartVolt<span class="smartvolt-period">.</span></h2>
+            <p class="smartvolt-lede">A prepaid electricity-meter simulation for shared-room energy management: configure rooms, residents, and meters; simulate appliance loads; explore consumption; and manage recharge and support workflows.</p>
+            <div class="tags"><span>FastAPI</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Alembic</span><span>Docker</span><span>AWS EC2</span><span>Caddy / HTTPS</span></div>
+            <div class="smartvolt-actions"><a class="button button-solid" href="https://smartvolt-demo.duckdns.org/overview" target="_blank" rel="noreferrer">Open SmartVolt ↗</a><a class="button button-ghost" href="https://smartvolt-demo.duckdns.org/docs" target="_blank" rel="noreferrer">API docs ↗</a><a class="button button-ghost" href="https://github.com/Er-Ishan-Srivastav/SmartVolt" target="_blank" rel="noreferrer">Source ↗</a></div>
+          </div>
+          <div class="smartvolt-panel reveal reveal-delay"><div class="smartvolt-panel-head"><span>SMARTVOLT / SYSTEM MAP</span><span>LIVE DEMO</span></div><div class="smartvolt-flow">
+            <div class="smartvolt-flow-node"><span>01</span><div><strong>Resident & meter</strong><small>Rooms · tenants · recharge attribution</small></div></div><div class="smartvolt-flow-connector">↓</div>
+            <div class="smartvolt-flow-node smartvolt-flow-accent"><span>02</span><div><strong>Load Lab</strong><small>Appliance quantities · schedules · daily scenarios</small></div></div><div class="smartvolt-flow-connector">↓</div>
+            <div class="smartvolt-flow-node"><span>03</span><div><strong>API & persistence</strong><small>FastAPI · SQLAlchemy · PostgreSQL</small></div></div><div class="smartvolt-flow-connector">↓</div>
+            <div class="smartvolt-flow-node"><span>04</span><div><strong>Analytics & support</strong><small>Consumption · tickets · admin workflows</small></div></div>
+          </div><div class="smartvolt-panel-foot"><span>RELEASE VERIFICATION</span><strong>52 BACKEND TESTS PASSED*</strong></div></div>
+        </div>
+        <p class="smartvolt-note">*52 backend tests passed in the release-candidate verification run; frontend TypeScript checks and production build also succeeded. SmartVolt simulates meter readings and recharges; it does not connect to physical meters or process real payments.</p>
+      </section>
+
       <section id="projects" class="section section-pad">
         <div class="section-head reveal">
-          <span class="section-label">05 / PROJECTS</span>
+          <span class="section-label">06 / PROJECTS</span>
           <a class="section-code section-link" href="https://github.com/Er-Ishan-Srivastav" target="_blank" rel="noreferrer">github.com/Er-Ishan-Srivastav ↗</a>
         </div>
 
@@ -477,7 +504,7 @@
 
       <section id="research" class="section section-pad section-muted">
         <div class="section-head reveal">
-          <span class="section-label">06 / RESEARCH</span>
+          <span class="section-label">07 / RESEARCH</span>
           <span class="section-code">/research.index</span>
         </div>
 
@@ -497,7 +524,7 @@
 
       <section id="learning" class="section section-pad">
         <div class="section-head reveal">
-          <span class="section-label">07 / LEARNING HUB</span>
+          <span class="section-label">08 / LEARNING HUB</span>
           <span class="section-code">/ishan-learning-hub</span>
         </div>
 
@@ -527,7 +554,7 @@
 
       <section id="contact" class="section section-pad contact-section">
         <div class="section-head reveal">
-          <span class="section-label">08 / CONNECT</span>
+          <span class="section-label">09 / CONNECT</span>
           <span class="section-code">/contact</span>
         </div>
 
@@ -542,6 +569,7 @@
             <a href="mailto:ishan70073@gmail.com"><span>EMAIL</span><strong>ishan70073@gmail.com</strong><b>↗</b></a>
             <a href="https://www.linkedin.com/in/ishansri03/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><strong>linkedin.com/in/ishansri03</strong><b>↗</b></a>
             <a href="https://github.com/Er-Ishan-Srivastav" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>github.com/Er-Ishan-Srivastav</strong><b>↗</b></a>
+            <a href="https://github.com/Er-Ishan-Srivastav/SmartVolt" target="_blank" rel="noreferrer"><span>FEATURED PROJECT</span><strong>SmartVolt — live demo & source</strong><b>↗</b></a>
             <a href="https://er-ishan-srivastav.github.io/Ishan-Learning-Hub/" target="_blank" rel="noreferrer"><span>LEARNING HUB</span><strong>er-ishan-srivastav.github.io/Ishan-Learning-Hub</strong><b>↗</b></a>
           </div>
         </div>
