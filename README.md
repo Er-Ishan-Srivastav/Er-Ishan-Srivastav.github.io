@@ -2,22 +2,21 @@
 
 **Live site:** https://er-ishan-srivastav.github.io/
 
-A hand-built, responsive portfolio focused on data engineering, analytics, backend systems, applied AI, and selected project case studies.
+A hand-built, responsive portfolio presenting Ishan's current direction across data engineering, backend systems, databases, and applied AI.
 
-## Highlights
+## Portfolio focus
 
-- Responsive dark visual system with accessible navigation, scroll progress, and progressive reveal effects.
-- Dedicated **SmartVolt** feature with one primary live-app button, secondary API/source links, architecture summary, and release verification notes.
-- Case studies for CAMAF, BrillX, PayFlow UPI, Enkryptor, and AI Vision Assistant.
-- C-DAC Big Data Analytics Learning Hub linking 10 public study modules.
-- Experience, technical stack, research, and contact sections, with eClerx shown as a completed role (May–Aug 2026).
-- Open Graph metadata for improved link previews; no frontend framework or build step required.
+- Professional experience in data operations, ETL/data-quality workflows, testing, and team coordination.
+- C-DAC Post Graduate Certificate in Big Data Analytics, with a separate Learning Hub for revision resources.
+- SmartVolt: full-stack prepaid electricity-meter simulation with React/TypeScript, FastAPI, SQLAlchemy, PostgreSQL, Alembic, Docker Compose, and Caddy HTTPS.
+- Selected case studies: PayFlow UPI, CAMAF, BrillX, Enkryptor, and AI Vision Assistant.
+- Research/publications with submission and publication status described separately.
 
 ## Tech
 
 - HTML5, CSS, and vanilla JavaScript.
 - Inter and DM Mono via Google Fonts.
-- Static hosting on GitHub Pages.
+- Static hosting on GitHub Pages; no framework or build step required.
 
 ## Repository layout
 
@@ -39,24 +38,22 @@ A hand-built, responsive portfolio focused on data engineering, analytics, backe
     └── vision-assistant.html
 ```
 
-## Local preview
-
-Run a static file server from the repository root:
+## Preview locally
 
 ```bash
 python -m http.server 8080
 ```
 
-Open http://localhost:8080.
+Then open http://localhost:8080.
 
-## Featured live build
+## Featured project
 
-- [SmartVolt application](https://smartvolt-demo.duckdns.org/overview)
-- [FastAPI docs](https://smartvolt-demo.duckdns.org/docs)
-- [SmartVolt source repository](https://github.com/Er-Ishan-Srivastav/SmartVolt)
+- [SmartVolt demo](https://smartvolt-demo.duckdns.org/overview)
+- [SmartVolt API docs](https://smartvolt-demo.duckdns.org/docs)
+- [SmartVolt source](https://github.com/Er-Ishan-Srivastav/SmartVolt)
 
-SmartVolt simulates meter readings and recharges; it does not connect to physical meters or process real payments.
+SmartVolt is a simulation/learning project. It does not connect to physical electricity meters or process real payments. For current test and build status, use the source repository's CI and documentation rather than relying on static portfolio claims.
 
-## Related project
+## Related resource
 
-The [Ishan Learning Hub](https://er-ishan-srivastav.github.io/Ishan-Learning-Hub/) is a separate public study and revision site.
+The [Ishan Learning Hub](https://er-ishan-srivastav.github.io/Ishan-Learning-Hub/) is a separate C-DAC study and revision site.
