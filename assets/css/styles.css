@@ -377,3 +377,9 @@ main{padding-top:76px}
 .smartvolt-note{max-width:var(--max);margin:26px auto 0;color:#778079;font-size:10px;line-height:1.7}
 @media(max-width:900px){.smartvolt-layout{grid-template-columns:1fr;gap:38px}}
 @media(max-width:560px){.smartvolt-actions{align-items:stretch;flex-direction:column}.smartvolt-actions .button{width:100%}.smartvolt-panel-head,.smartvolt-panel-foot{align-items:flex-start;flex-direction:column;gap:8px}}
+
+/* October 2026: SmartVolt CTA and portfolio polish */
+.smartvolt-secondary-links{margin:15px 0 0;color:#78817f;font-size:11px;line-height:1.8}
+.smartvolt-secondary-links a{color:#b8c1bd;text-decoration:underline;text-decoration-color:rgba(212,255,79,.4);text-underline-offset:3px}
+.smartvolt-secondary-links a:hover{color:var(--accent)}
+@media(prefers-reduced-motion:reduce){.ambient{filter:none}}
