@@ -7,10 +7,10 @@ A hand-built, responsive portfolio focused on data engineering, analytics, backe
 ## Highlights
 
 - Responsive dark visual system with accessible navigation, scroll progress, and progressive reveal effects.
-- Dedicated **SmartVolt** feature with the live app, API documentation, source code, architecture summary, and release verification notes.
+- Dedicated **SmartVolt** feature with one primary live-app button, secondary API/source links, architecture summary, and release verification notes.
 - Case studies for CAMAF, BrillX, PayFlow UPI, Enkryptor, and AI Vision Assistant.
 - C-DAC Big Data Analytics Learning Hub linking 10 public study modules.
-- Experience, technical stack, research, and contact sections.
+- Experience, technical stack, research, and contact sections, with eClerx shown as a completed role (May–Aug 2026).
 - Open Graph metadata for improved link previews; no frontend framework or build step required.
 
 ## Tech
