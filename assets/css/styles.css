@@ -383,3 +383,21 @@ main{padding-top:76px}
 .smartvolt-secondary-links a{color:#b8c1bd;text-decoration:underline;text-decoration-color:rgba(212,255,79,.4);text-underline-offset:3px}
 .smartvolt-secondary-links a:hover{color:var(--accent)}
 @media(prefers-reduced-motion:reduce){.ambient{filter:none}}
+
+
+/* October 2026 portfolio audit: content-first layout refinements */
+.hero-grid{grid-template-columns:minmax(0,1.16fr) minmax(340px,.72fr);gap:68px}
+.hero h1{font-size:clamp(48px,6.1vw,78px);line-height:.98}
+.hero-proof{grid-template-columns:repeat(4,minmax(0,1fr))}
+.hero-proof strong{font-size:20px}
+.hero-proof span{font-size:8px}
+@media(max-width:1080px){
+  .hero-grid{grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);gap:38px}
+  .hero h1{font-size:clamp(46px,6vw,68px)}
+  .brand{min-width:235px}
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero h1{font-size:clamp(52px,9vw,76px)}
+  .profile-stack{margin-left:auto;margin-right:auto}
+}
