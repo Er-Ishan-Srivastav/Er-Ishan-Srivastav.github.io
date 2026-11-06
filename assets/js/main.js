@@ -74,3 +74,40 @@ const updateProgress = () => {
 window.addEventListener("scroll", updateProgress, { passive: true });
 updateProgress();
 
+
+
+/* PAGE TRANSITION / SECTION STATE */
+const pageSections = [...document.querySelectorAll("main > section")];
+
+if ("IntersectionObserver" in window && pageSections.length) {
+  const pageObserver = new IntersectionObserver(
+    (entries) => {
+      const center = window.innerHeight / 2;
+      const activeEntry = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => {
+          const distanceA = Math.abs(
+            (a.boundingClientRect.top + a.boundingClientRect.bottom) / 2 - center
+          );
+          const distanceB = Math.abs(
+            (b.boundingClientRect.top + b.boundingClientRect.bottom) / 2 - center
+          );
+          return distanceA - distanceB;
+        })[0];
+
+      if (!activeEntry) return;
+
+      pageSections.forEach((section) => {
+        section.classList.toggle("is-page-active", section === activeEntry.target);
+      });
+    },
+    {
+      rootMargin: "-35% 0px -45% 0px",
+      threshold: 0
+    }
+  );
+
+  pageSections.forEach((section) => pageObserver.observe(section));
+} else {
+  pageSections.forEach((section) => section.classList.add("is-page-active"));
+}
