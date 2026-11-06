@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="StreamBharat — PySpark, Delta Lake and Structured Streaming data engineering case study by Ishan Srivastav.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="StreamBharat — Ishan Srivastav">
+  <meta property="og:description" content="An OTT analytics lakehouse project covering batch transformations, incremental ingestion, real-time trending and churn modelling.">
+  <title>StreamBharat — Data Engineering Case Study | Ishan Srivastav</title>
+  <link rel="stylesheet" href="../assets/css/project.css">
+</head>
+<body class="project-page">
+<header class="project-nav"><a class="project-brand" href="../">ISHAN SRIVASTAV</a><div><a href="../">Portfolio</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://github.com/Er-Ishan-Srivastav/StreamBharat" target="_blank" rel="noreferrer">Source ↗</a></div></header>
+<main class="project-wrap">
+  <section class="project-hero">
+    <div class="project-eyebrow">01 / STREAMBHARAT · 2026 · SIX-MEMBER TEAM PROJECT</div>
+    <h1 class="project-title">An OTT data platform built around batch analytics and streaming signals.</h1>
+    <p class="project-subtitle">StreamBharat is a course-scoped data engineering platform for a fictional Indian OTT service. It combines multi-domain ingestion, a Bronze/Silver/Gold lakehouse workflow, business analytics, and two simulator-driven Structured Streaming jobs.</p>
+    <div class="project-meta"><span>Python 3.10 / 3.11</span><span>PySpark 3.5.3</span><span>Delta Lake 3.2</span><span>Spark MLlib</span><span>Structured Streaming</span><span>pytest</span></div>
+  </section>
+  <div class="project-grid">
+    <article class="project-block"><h2>The data problem</h2><p>OTT products generate data across playback, subscriptions, catalogue, search, advertising, and CDN operations. These sources differ in structure and business meaning, so analytics depends on cleaning events, reconciling records, modelling dimensions, and producing consistent downstream datasets.</p></article>
+    <article class="project-block"><h2>Project architecture</h2><p>The batch path moves source data through raw/bronze, silver, and gold layers for reporting and analytical use cases. Separate streaming entry points consume simulator-emitted JSON files for live trending and ad frequency/pacing demonstrations.</p></article>
+    <article class="project-block project-full"><h2>Processing flow</h2><div class="project-flow">
+      <div class="flow-row"><span class="flow-num">01</span><span class="flow-label">Ingestion</span><span class="flow-desc">Bring playback, billing, catalogue, search, advertising, CDN, and profile data into the processing workflow.</span></div>
+      <div class="flow-row"><span class="flow-num">02</span><span class="flow-label">Incremental load</span><span class="flow-desc">Q4 implements incremental ingestion and its data-processing contract, with repeatable execution as a key design concern.</span></div>
+      <div class="flow-row"><span class="flow-num">03</span><span class="flow-label">Transform</span><span class="flow-desc">PySpark question modules implement business transformations across engagement, subscriptions, catalogue, delivery, and data quality.</span></div>
+      <div class="flow-row"><span class="flow-num">04</span><span class="flow-label">Streaming</span><span class="flow-desc">Q17 calculates real-time trending from play events. Q18 demonstrates live ad frequency caps and spend pacing using a separate stream.</span></div>
+      <div class="flow-row"><span class="flow-num">05</span><span class="flow-label">Analytics & ML</span><span class="flow-desc">Gold-layer outputs support reporting use cases; Q16 covers recommendations and Q20 covers churn classification.</span></div>
+    </div></article>
+    <article class="project-block"><h2>My ownership</h2><ul>
+      <li><strong>Q4 — Incremental ingestion:</strong> implementation of the incremental ingestion workstream.</li>
+      <li><strong>Q17 — Real-time trending:</strong> a separate Structured Streaming job for live playback trends.</li>
+      <li><strong>Q20 — Churn model:</strong> implementation work for the churn-classification question.</li>
+      <li><strong>Integration:</strong> coordination of interfaces and outputs across the six-member project team.</li>
+    </ul></article>
+    <article class="project-block"><h2>Testing and engineering checks</h2><p>The repository includes deterministic business-rule tests, Python compilation checks in GitHub Actions, a finite batch orchestrator, and a dry-run mode for inspecting stage order. These checks are useful, but they do not substitute for executing every Spark job against the full dataset.</p></article>
+  </div>
+  <div class="project-evidence">
+    <div class="evidence"><strong>20</strong><span>question modules present</span></div>
+    <div class="evidence"><strong>2</strong><span>separate streaming entry points</span></div>
+    <div class="evidence"><strong>~1.62M</strong><span>synthetic playback events in sample data</span></div>
+  </div>
+  <section class="project-block project-full" style="margin-top:30px">
+    <h2>Scope and validation status</h2>
+    <p>This is a learning/workbook project using synthetic sample data, not a deployed production OTT platform. The repository documents all 20 question modules and the two streaming entry points. Full Spark/Delta integration, complete dataset reconciliation, streaming restart and late-event tests, and measured model-performance metrics are explicitly listed as outstanding validation work. The project does not claim Kafka, Airflow, PostgreSQL, or a deployed BI serving layer as part of the core workbook implementation.</p>
+    <p>For the latest state, test commands, dataset conventions, architecture and workstream notes, consult the <a href="https://github.com/Er-Ishan-Srivastav/StreamBharat" target="_blank" rel="noreferrer">source repository README</a> and its <a href="https://github.com/Er-Ishan-Srivastav/StreamBharat/actions" target="_blank" rel="noreferrer">GitHub Actions</a>.</p>
+  </section>
+  <div class="project-footer"><p>Related: Data Engineering · PySpark · Delta Lake · Structured Streaming · Spark MLlib</p><a href="../">← Back to portfolio</a></div>
+</main>
+</body>
+</html>
